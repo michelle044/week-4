@@ -1,0 +1,225 @@
+.card {}
+    .card__title {}
+    .card__excerpt {}
+    .card__image {}
+    .card__more {}
+    .card__more:hover {}
+    .card__more:active {}
+
+    @media screen and (min-width: 1024px) {
+      .card {}
+      .card__title {}
+      .card__excerpt {}
+      .card__image {}
+      .card__more {}
+      .card__more:hover {}
+      .card__more:active {}
+    }
+    
+.card {
+    background-color: #dbf8da; /* Light background for the card */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    padding: 1rem;
+  }
+
+  .card__excerpt {
+    font-size: 1rem;
+    color: #666;
+    padding: 0 1rem 1rem;
+  }
+  
+  
+  .card__image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+
+  .card__more {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .card__more:hover {
+    background-color: #0056b3;
+  }
+  
+  .card__more:active {
+    background-color: #003d80;
+  }
+  
+  body {
+    background-color: #2a522b;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .card {
+      max-width: 600px;
+      margin: auto;
+    }
+  
+    .cards {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 8vw;
+    }
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Pacifico&display=swap');
+
+
+body {
+  font-family: 'Lora', serif; 
+  background-color: #3d5d3e; 
+  color: #3e3d32; 
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: 2px solid #d4c9a3; 
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card__title {
+  font-family: 'Pacifico', cursive; 
+  color: #4a5a3f; 
+  padding: 1rem;
+  text-align: center;
+}
+
+.card__excerpt {
+  font-size: 1rem;
+  font-family: 'Lora', serif; 
+  color: #5f574f; 
+  padding: 0 1rem 1rem;
+}
+
+
+.card__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card__more {
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #73856c; 
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-family: 'Pacifico', cursive; 
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card__more:hover {
+  background-color: #5a6f54; 
+}
+
+.card__more:active {
+  background-color: #40503a; 
+}
+
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 8vw;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .card {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.18);
+  }
+  
+  .card::before {
+    content: "🐶";
+    font-size: 2rem;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    opacity: 0.6;
+  }
+  
+  .card__title {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #4a5a3f;
+    text-align: center;
+    padding: 1rem 0;
+    background: linear-gradient(to right, #a3c9a8, #f3efe0);
+    border-bottom: 2px solid #d4c9a3;
+  }
+  
+  .card__excerpt {
+    font-size: 1.1rem;
+    font-family: 'Lora', serif;
+    color: #5f574f;
+    padding: 1rem 1.5rem;
+    text-align: justify;
+  }
+  
+  .card__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid #d4c9a3;
+  }
+  
+  
+    .card {
+      max-width: 450px;
+    }
